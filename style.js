@@ -44,7 +44,7 @@ if (currentTime> compareTime2) {
 
 if (currentTime> compareTime3) {
     testTime2.nextElementSibling.setAttribute("class", "past")
-}   else if (currentTime<compareTime3) {
+}   else if (currentTime<compareTime2) {
     testTime2.nextElementSibling.setAttribute("class", "future")
 }   else {
     testTime2.nextElementSibling.setAttribute("class", "present")
@@ -52,7 +52,7 @@ if (currentTime> compareTime3) {
 
 if (currentTime> compareTime4) {
     testTime3.nextElementSibling.setAttribute("class", "past")
-}   else if (currentTime<compareTime4) {
+}   else if (currentTime<compareTime3) {
     testTime3.nextElementSibling.setAttribute("class", "future")
 }   else {
     testTime3.nextElementSibling.setAttribute("class", "present")
@@ -60,14 +60,14 @@ if (currentTime> compareTime4) {
 
 if (currentTime> compareTime5) {
     testTime4.nextElementSibling.setAttribute("class", "past")
-}   else if (currentTime<compareTime5) {
+}   else if (currentTime<compareTime4) {
     testTime4.nextElementSibling.setAttribute("class", "future")
 }   else {
     testTime4.nextElementSibling.setAttribute("class", "present")
 }
 if (currentTime> compareTime6) {
     testTime5.nextElementSibling.setAttribute("class", "past")
-}   else if (currentTime<compareTime6) {
+}   else if (currentTime<compareTime5) {
     testTime5.nextElementSibling.setAttribute("class", "future")
 }   else {
     testTime5.nextElementSibling.setAttribute("class", "present")
@@ -75,7 +75,7 @@ if (currentTime> compareTime6) {
 
 if (currentTime> compareTime7) {
     testTime6.nextElementSibling.setAttribute("class", "past")
-}   else if (currentTime<compareTime7) {
+}   else if (currentTime<compareTime6) {
     testTime6.nextElementSibling.setAttribute("class", "future")
 }   else {
     testTime6.nextElementSibling.setAttribute("class", "present")
@@ -83,21 +83,21 @@ if (currentTime> compareTime7) {
 
 if (currentTime> compareTime8) {
     testTime7.nextElementSibling.setAttribute("class", "past")
-}   else if (currentTime<compareTime8) {
+}   else if (currentTime<compareTime7) {
     testTime7.nextElementSibling.setAttribute("class", "future")
 }   else {
     testTime7.nextElementSibling.setAttribute("class", "present")
 }
 if (currentTime> compareTime9) {
     testTime8.nextElementSibling.setAttribute("class", "past")
-}   else if (currentTime<compareTime9) {
+}   else if (currentTime<compareTime8) {
     testTime8.nextElementSibling.setAttribute("class", "future")
 }   else {
     testTime8.nextElementSibling.setAttribute("class", "present")
 }
 if (currentTime> compareTime10) {
     testTime9.nextElementSibling.setAttribute("class", "past")
-}   else if (currentTime<compareTime10) {
+}   else if (currentTime<compareTime9) {
     testTime9.nextElementSibling.setAttribute("class", "future")
 }   else {
     testTime9.nextElementSibling.setAttribute("class", "present")
