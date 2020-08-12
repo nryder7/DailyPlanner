@@ -18,86 +18,74 @@
     <h1 class="display-3">Work Day Scheduler</h1>
     <p class="lead">A simple calendar app for scheduling your work day</p>
     <p id="currentDay" class="lead"></p>
+    <p id="time"></p>
+    <p id="hour"></p>
   </header>
   <div class="container">
-    <!-- Timeblocks go here -->
-    <!--
-      <table>
-      <tr class="row time-block" style ="width:70%">
-        <td class= "hour">9AM</td>
-        <td class= "textarea" ><span>TO</span></td>
-        <td><button class="saveBtn"><span>SAVE</span></button></td>
-      </tr>
-    </table>
+    <!-- Timeblocks go here --> <!-- value = 08:00  set button values <span id = "8"></span> -->
+  <div class="row time-block" style="margin-left:40px; margin-right:40px">
+    <div class="hour" id="testTime1" style="padding:20px">08:00<br><br>AM<span style="display:none">"08:59:59"</span></div>
+    <input type="text" id = "eight" class="form-control text-area" style="height: 100%; width:50%; color:black" placeholder="">
+    <button class="saveBtn" style="padding:20px; height:100%" value = "0"><span>Save</span></button>
+  </div>
+  <div class="row time-block" style="margin-left:40px; margin-right:40px">
+    <div class="hour" id="testTime2" style="padding:20px">09:00<br><br>AM<span style="display:none">"09:59:59"</span></div>
+    <input type="text" class="form-control text-area" style="height: 100%; width:50%;  color:black" placeholder="">
+    <button class="saveBtn" style="padding:20px; height:100%" value = "1"><span>Save</span></button>
+  </div>
+  <div class="row time-block" style="margin-left:40px; margin-right:40px">
+    <div class="hour" id="testTime3" style="padding:20px">10:00<br><br> AM<span style="display:none">"10:59:59"</span></div>
+    <input type="text" class="form-control text-area" style="height: 100%; width:50%;  color:black" placeholder="">
+    <button class="saveBtn" style="padding:20px; height:100%" value = "2"><span>Save</span></button>
+  </div>
+  <div class="row time-block" style="margin-left:40px; margin-right:40px">
+    <div class="hour" id="testTime4" style="padding:20px">11:00<br><br>AM<span style="display:none">"11:59:59"</span></div>
+    <input type="text" class="form-control text-area" style="height: 100%; width:50%;  color:black" placeholder="">
+    <button class="saveBtn" style="padding:20px; height:100%" value = "3"><span>Save</span></button>
+  </div>
+  <div class="row time-block" style="margin-left:40px; margin-right:40px">
+    <div class="hour" id="testTime5" style="padding:20px">12:00<br><br>AM<span style="display:none">"12:59:59"</span></div>
+    <input type="text" class="form-control text-area" style="height: 100%; width:50%;  color:black" placeholder="">
+    <button class="saveBtn" style="padding:20px; height:100%" value = "4"><span>Save</span></button>
+  </div>
+  <div class="row time-block" style="margin-left:40px; margin-right:40px">
+    <div class="hour" id="testTime6" style="padding:20px">01:00<br><br>PM<span style="display:none">"13:59:59"</span></div>
+    <input type="text" class="form-control text-area" style="height: 100%; width:50%;  color:black" placeholder="">
+    <button class="saveBtn" style="padding:20px; height:100%" value = "5"><span>Save</span></button>
+  </div>
+  <div class="row time-block" style="margin-left:40px; margin-right:40px">
+    <div class="hour" id="testTime7" style="padding:20px">02:00<br><br>PM<span style="display:none">"14:59:59"</span></div>
+    <input type="text" class="form-control text-area" style="height: 100%; width:50%;  color:black" placeholder="">
+    <button class="saveBtn" style="padding:20px; height:100%" value = "6"><span>Save</span></button>
+  </div>
+  <div class="row time-block" style="margin-left:40px; margin-right:40px">
+    <div class="hour" id="testTime8" style="padding:20px">03:00<br><br>PM<span style="display:none">"15:59:59"</span></div>
+    <input type="text" class="form-control text-area" style="height: 100%; width:50%;  color:black" placeholder="">
+    <button class="saveBtn" style="padding:20px; height:100%" value = "7"><span>Save</span></button>
+  </div>
+  <div class="row time-block" style="margin-left:40px; margin-right:40px">
+    <div class="hour" id="testTime9" style="padding:20px">04:00<br><br>PM<span style="display:none">"16:59:59"</span></div>
+    <input type="text" class="form-control text-area" style="height: 100%; width:50%;  color:black" placeholder="">
+    <button class="saveBtn" style="padding:20px; height:100%" value = "8"><span>Save</span></button>
+  </div>
+  <div class="row time-block" style="margin-left:40px; margin-right:40px">
+    <div class="hour" id="testTime10" style="padding:20px">05:00<br><br>PM<span style="display:none">"21:59:59"</span></div>
+    <input type="text" class="form-control text-area" style="height: 100%; width:50%;  color:black" placeholder="">
+    <button class="saveBtn" style="padding:20px; height:100%" value = "9"><span>Save</span></button>
+  </div>
+  </div>
 
-      <div class="row ">
-        <div class="hour time-block">8AM</div>
-        <div class= "text-area"><span>bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb</span></div>
-        <button class="saveBtn"><span>button</span></button>
-      </div>
-    -->
-
-  </div>
-  <div class="row time-block" style="margin-left:40px; margin-right:40px">
-    <div class="hour" style="padding:20px">08:00</div>
-      <input type="text" class="form-control text-area" style="height: 100%; width:80%;  color:black" placeholder="">
-    <button class="saveBtn" style="padding:20px"><span>Save</span></button>
-  </div>
-  <div class="row time-block" style="margin-left:40px; margin-right:40px">
-    <div class="hour" style="padding:20px">09:00</div>
-      <input type="text" class="form-control text-area" style="height: 100%; width:80%;  color:black" placeholder="">
-    <button class="saveBtn" style="padding:20px"><span>Save</span></button>
-  </div>
-  <div class="row time-block" style="margin-left:40px; margin-right:40px">
-    <div class="hour" style="padding:20px">10:00</div>
-      <input type="text" class="form-control text-area" style="height: 100%; width:80%;  color:black" placeholder="">
-    <button class="saveBtn" style="padding:20px"><span>Save</span></button>
-  </div>
-  <div class="row time-block" style="margin-left:40px; margin-right:40px">
-    <div class="hour" style="padding:20px">11:00</div>
-      <input type="text" class="form-control text-area" style="height: 100%; width:80%;  color:black" placeholder="">
-    <button class="saveBtn" style="padding:20px"><span>Save</span></button>
-  </div>
-  <div class="row time-block" style="margin-left:40px; margin-right:40px">
-    <div class="hour" style="padding:20px">12:00</div>
-      <input type="text" class="form-control text-area" style="height: 100%; width:80%;  color:black" placeholder="">
-    <button class="saveBtn" style="padding:20px"><span>Save</span></button>
-  </div>
-  <div class="row time-block" style="margin-left:40px; margin-right:40px">
-    <div class="hour" style="padding:20px">01:00</div>
-      <input type="text" class="form-control text-area" style="height: 100%; width:80%;  color:black" placeholder="">
-    <button class="saveBtn" style="padding:20px"><span>Save</span></button>
-  </div>
-  <div class="row time-block" style="margin-left:40px; margin-right:40px">
-    <div class="hour" style="padding:20px">02:00</div>
-      <input type="text" class="form-control text-area" style="height: 100%; width:80%;  color:black" placeholder="">
-    <button class="saveBtn" style="padding:20px"><span>Save</span></button>
-  </div>
-  <div class="row time-block" style="margin-left:40px; margin-right:40px">
-    <div class="hour" style="padding:20px">03:00</div>
-      <input type="text" class="form-control text-area" style="height: 100%; width:80%;  color:black" placeholder="">
-    <button class="saveBtn" style="padding:20px"><span>Save</span></button>
-  </div>
-  <div class="row time-block" style="margin-left:40px; margin-right:40px">
-    <div class="hour" style="padding:20px">04:00</div>
-      <input type="text" class="form-control text-area" style="height: 100%; width:80%;  color:black" placeholder="">
-    <button class="saveBtn" style="padding:20px"><span>Save</span></button>
-  </div>
-  <div class="row time-block" style="margin-left:40px; margin-right:40px">
-    <div class="hour" style="padding:20px">05:00</div>
-      <input type="text" class="form-control text-area" style="height: 100%; width:80%;  color:black" placeholder="">
-    <button class="saveBtn" style="padding:20px"><span>Save</span></button>
-  </div>
-  </div>
   <!--
       
       hour description
       <span>text</span>
       -->
 
-  <script src="style.js"></script>
+  
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="style.js"></script>
+  
 </body>
 
 </html>
